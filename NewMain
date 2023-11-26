@@ -674,22 +674,22 @@ if not HidUi then
 			Size = UDim2.new(0, 525, 0, 29),
 			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
 		}):Play()
-pages.Visible = true
-MainSide.Visible = true
-infoContainer.Visible = true
-FactName.Visible = true
-SettingUI.Visible = true
+pages.Visible = false 
+MainSide.Visible = false
+infoContainer.Visible = false
+FactName.Visible = false 
+SettingUI.Visible = false
         HidUi = true
         else
     game.TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 			Size = UDim2.new(0, 525, 0, 318),
 			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
 		}):Play()
-pages.Visible = false
-MainSide.Visible = false
-infoContainer.Visible = false
-FactName.Visible = false
-SettingUI.Visible = false
+pages.Visible = true
+MainSide.Visible = true
+infoContainer.Visible = true
+FactName.Visible = true
+SettingUI.Visible = true
    HidUi = false
     end
     end)
