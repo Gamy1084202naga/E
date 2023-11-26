@@ -452,6 +452,7 @@ Click:Play()
 end
 end)
     local ScreenGui = Instance.new("ScreenGui")
+    local Holder = Instance.new("Frame")
     local Main = Instance.new("Frame")
     local MainCorner = Instance.new("UICorner")
     local Background = Instance.new("ImageLabel")
@@ -503,8 +504,17 @@ end)
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     ScreenGui.ResetOnSpawn = false
 
+    Holder.Name = "Holder"
+    Holder.Parent = ScreenGui
+    Holder.BackgroundColor3 = themeList.Background
+    Holder.BackgroundTransparency = 1
+    Holder.ClipsDescendants = true
+    Holder.AnchorPoint = Vector2.new(0.5, 0.5)
+    Holder.Position = UDim2.new(0.5,0,0.5,0)
+    Holder.Size = UDim2.new(0, 525, 0, 318)
+
     Main.Name = "Main"
-    Main.Parent = ScreenGui
+    Main.Parent = Holder
     Main.BackgroundColor3 = themeList.Background
     Main.ClipsDescendants = true
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
